@@ -3,4 +3,4 @@
 
 Demo:
 
-![Breakout Ninja Gameplay](demo/demo.gif)
+![Breakout Ninja Gameplay](2020-09-18 15.45.25.gif)
