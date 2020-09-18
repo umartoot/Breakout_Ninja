@@ -1,0 +1,134 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://TexturesOG/paddle.png" type="Texture" id=1]
+[ext_resource path="res://ScriptsOG/PaddleOG.gd" type="Script" id=2]
+[ext_resource path="res://ScriptsOG/worldOG.gd" type="Script" id=3]
+[ext_resource path="res://MiniSceneOG/BricksOG.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Fonts/PettingillCF-Bold.otf" type="DynamicFontData" id=5]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 40, 4 )
+
+[sub_resource type="DynamicFont" id=2]
+font_data = ExtResource( 5 )
+
+[sub_resource type="DynamicFont" id=3]
+font_data = ExtResource( 5 )
+
+[node name="World" type="Node2D"]
+position = Vector2( 0, 2 )
+script = ExtResource( 3 )
+
+[node name="Paddle" type="KinematicBody2D" parent="."]
+position = Vector2( 320, 334 )
+motion/sync_to_physics = true
+script = ExtResource( 2 )
+
+[node name="Sprite" type="Sprite" parent="Paddle"]
+scale = Vector2( 2, 2 )
+texture = ExtResource( 1 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Paddle"]
+shape = SubResource( 1 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Anchor" type="Position2D" parent="Paddle"]
+position = Vector2( 0, 32 )
+
+[node name="Walls" type="StaticBody2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Walls"]
+polygon = PoolVector2Array( -64, 382, -64, -66, 704, -66, 704, 382, 640, 382, 640, -2, 0, -2, 0, 382 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Bricks" type="Node" parent="."]
+
+[node name="Bricks11" parent="Bricks" instance=ExtResource( 4 )]
+position = Vector2( 608, 16 )
+
+[node name="Bricks12" parent="Bricks" instance=ExtResource( 4 )]
+position = Vector2( 544, 16 )
+
+[node name="Bricks13" parent="Bricks" instance=ExtResource( 4 )]
+position = Vector2( 480, 16 )
+
+[node name="Bricks14" parent="Bricks" instance=ExtResource( 4 )]
+position = Vector2( 416, 16 )
+
+[node name="Bricks15" parent="Bricks" instance=ExtResource( 4 )]
+position = Vector2( 352, 16 )
+
+[node name="Bricks16" parent="Bricks" instance=ExtResource( 4 )]
+position = Vector2( 288, 16 )
+
+[node name="Bricks17" parent="Bricks" instance=ExtResource( 4 )]
+position = Vector2( 224, 16 )
+
+[node name="Bricks18" parent="Bricks" instance=ExtResource( 4 )]
+position = Vector2( 160, 16 )
+
+[node name="Bricks19" parent="Bricks" instance=ExtResource( 4 )]
+position = Vector2( 96, 16 )
+
+[node name="Bricks20" parent="Bricks" instance=ExtResource( 4 )]
+position = Vector2( 32, 16 )
+
+[node name="Bricks30" parent="Bricks" instance=ExtResource( 4 )]
+position = Vector2( 608, 48 )
+
+[node name="Bricks29" parent="Bricks" instance=ExtResource( 4 )]
+position = Vector2( 544, 48 )
+
+[node name="Bricks28" parent="Bricks" instance=ExtResource( 4 )]
+position = Vector2( 480, 48 )
+
+[node name="Bricks26" parent="Bricks" instance=ExtResource( 4 )]
+position = Vector2( 352, 48 )
+
+[node name="Bricks25" parent="Bricks" instance=ExtResource( 4 )]
+position = Vector2( 288, 48 )
+
+[node name="Bricks24" parent="Bricks" instance=ExtResource( 4 )]
+position = Vector2( 224, 48 )
+
+[node name="Bricks22" parent="Bricks" instance=ExtResource( 4 )]
+position = Vector2( 96, 48 )
+
+[node name="Bricks31" parent="Bricks" instance=ExtResource( 4 )]
+position = Vector2( 96, 80 )
+
+[node name="Bricks32" parent="Bricks" instance=ExtResource( 4 )]
+position = Vector2( 288, 80 )
+
+[node name="Bricks33" parent="Bricks" instance=ExtResource( 4 )]
+position = Vector2( 544, 80 )
+
+[node name="Score" type="Label" parent="."]
+margin_left = 20.0
+margin_top = 342.421
+margin_right = 75.0
+margin_bottom = 362.421
+custom_fonts/font = SubResource( 2 )
+text = "Score : 0"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="."]
+margin_left = 525.263
+margin_top = 340.0
+margin_right = 629.263
+margin_bottom = 366.0
+custom_fonts/font = SubResource( 3 )
+text = "Back To Menu"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]

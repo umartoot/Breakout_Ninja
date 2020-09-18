@@ -1,0 +1,293 @@
+[gd_scene load_steps=81 format=2]
+
+[ext_resource path="res://Textures/paddle/frame_03_delay-0.07s.png" type="Texture" id=1]
+[ext_resource path="res://MiniScene/Arrows.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Scripts/ArrowSpawner.gd" type="Script" id=3]
+[ext_resource path="res://Scripts/world.gd" type="Script" id=4]
+[ext_resource path="res://Textures/background 2/frame_12_delay-0.1s.png" type="Texture" id=5]
+[ext_resource path="res://Textures/background 2/frame_30_delay-0.1s.png" type="Texture" id=6]
+[ext_resource path="res://Textures/background 2/frame_26_delay-0.1s.png" type="Texture" id=7]
+[ext_resource path="res://Textures/background 2/frame_14_delay-0.1s.png" type="Texture" id=8]
+[ext_resource path="res://Textures/background 2/frame_13_delay-0.1s.png" type="Texture" id=9]
+[ext_resource path="res://Textures/background 2/frame_11_delay-0.1s.png" type="Texture" id=10]
+[ext_resource path="res://Textures/background 2/frame_17_delay-0.1s.png" type="Texture" id=11]
+[ext_resource path="res://Textures/background 2/frame_15_delay-0.1s.png" type="Texture" id=12]
+[ext_resource path="res://Textures/background 2/frame_16_delay-0.1s.png" type="Texture" id=13]
+[ext_resource path="res://Textures/background 2/frame_18_delay-0.1s.png" type="Texture" id=14]
+[ext_resource path="res://Textures/background 2/frame_19_delay-0.1s.png" type="Texture" id=15]
+[ext_resource path="res://Textures/background 2/frame_29_delay-0.1s.png" type="Texture" id=16]
+[ext_resource path="res://Textures/background 2/frame_31_delay-0.1s.png" type="Texture" id=17]
+[ext_resource path="res://Textures/background 2/frame_22_delay-0.1s.png" type="Texture" id=18]
+[ext_resource path="res://Textures/background 2/frame_23_delay-0.1s.png" type="Texture" id=19]
+[ext_resource path="res://Textures/background 2/frame_24_delay-0.1s.png" type="Texture" id=20]
+[ext_resource path="res://Textures/background 2/frame_27_delay-0.1s.png" type="Texture" id=21]
+[ext_resource path="res://Textures/background 2/frame_28_delay-0.1s.png" type="Texture" id=22]
+[ext_resource path="res://Textures/background 2/frame_20_delay-0.1s.png" type="Texture" id=23]
+[ext_resource path="res://Textures/background 2/frame_10_delay-0.1s.png" type="Texture" id=24]
+[ext_resource path="res://Textures/background 2/frame_08_delay-0.1s.png" type="Texture" id=25]
+[ext_resource path="res://Textures/background 2/frame_03_delay-0.1s.png" type="Texture" id=26]
+[ext_resource path="res://Textures/background 2/frame_04_delay-0.1s.png" type="Texture" id=27]
+[ext_resource path="res://Textures/background 2/frame_21_delay-0.1s.png" type="Texture" id=28]
+[ext_resource path="res://Textures/background 2/frame_25_delay-0.1s.png" type="Texture" id=29]
+[ext_resource path="res://Textures/background 2/frame_00_delay-0.1s.png" type="Texture" id=30]
+[ext_resource path="res://Textures/background 2/frame_01_delay-0.1s.png" type="Texture" id=31]
+[ext_resource path="res://Textures/background 2/frame_09_delay-0.1s.png" type="Texture" id=32]
+[ext_resource path="res://Textures/background 2/frame_02_delay-0.1s.png" type="Texture" id=33]
+[ext_resource path="res://Textures/background 2/frame_05_delay-0.1s.png" type="Texture" id=34]
+[ext_resource path="res://Textures/background 2/frame_07_delay-0.1s.png" type="Texture" id=35]
+[ext_resource path="res://Textures/background 2/frame_06_delay-0.1s.png" type="Texture" id=36]
+[ext_resource path="res://Textures/paddle/frame_06_delay-0.07s.png" type="Texture" id=37]
+[ext_resource path="res://Textures/paddle/frame_10_delay-0.07s.png" type="Texture" id=38]
+[ext_resource path="res://Textures/paddle/frame_02_delay-0.07s.png" type="Texture" id=39]
+[ext_resource path="res://Textures/paddle/frame_01_delay-0.07s.png" type="Texture" id=40]
+[ext_resource path="res://Textures/paddle/frame_08_delay-0.07s.png" type="Texture" id=41]
+[ext_resource path="res://Textures/paddle/frame_04_delay-0.07s.png" type="Texture" id=42]
+[ext_resource path="res://Textures/paddle/frame_05_delay-0.07s.png" type="Texture" id=43]
+[ext_resource path="res://Textures/paddle/frame_07_delay-0.07s.png" type="Texture" id=44]
+[ext_resource path="res://Textures/paddle/frame_00_delay-0.07s.png" type="Texture" id=45]
+[ext_resource path="res://Textures/paddle/frame_09_delay-0.07s.png" type="Texture" id=46]
+[ext_resource path="res://Textures/paddle/frame_11_delay-0.07s.png" type="Texture" id=47]
+[ext_resource path="res://Textures/paddle/frame_20_delay-0.07s.png" type="Texture" id=48]
+[ext_resource path="res://Textures/paddle/frame_16_delay-0.07s.png" type="Texture" id=49]
+[ext_resource path="res://Textures/paddle/frame_15_delay-0.07s.png" type="Texture" id=50]
+[ext_resource path="res://Textures/paddle/frame_14_delay-0.07s.png" type="Texture" id=51]
+[ext_resource path="res://Textures/paddle/frame_17_delay-0.07s.png" type="Texture" id=52]
+[ext_resource path="res://Textures/paddle/frame_19_delay-0.07s.png" type="Texture" id=53]
+[ext_resource path="res://Textures/paddle/frame_18_delay-0.07s.png" type="Texture" id=54]
+[ext_resource path="res://Scripts/Arrows.gd" type="Script" id=55]
+[ext_resource path="res://game_melody.wav" type="AudioStream" id=56]
+[ext_resource path="res://MiniScene/Hearts.gd" type="Script" id=57]
+[ext_resource path="res://Scripts/HeartSpawner.gd" type="Script" id=58]
+[ext_resource path="res://MiniScene/Hearts.tscn" type="PackedScene" id=59]
+[ext_resource path="res://MiniScene/PowerUp.tscn" type="PackedScene" id=60]
+[ext_resource path="res://Scripts/PowerUpSpawner.gd" type="Script" id=61]
+[ext_resource path="res://Textures/paddle/frame_12_delay-0.07s.png" type="Texture" id=62]
+[ext_resource path="res://Textures/paddle/frame_13_delay-0.07s.png" type="Texture" id=63]
+[ext_resource path="res://Scripts/PaddleLvl2.gd" type="Script" id=64]
+[ext_resource path="res://Fonts/PettingillCF-Bold.otf" type="DynamicFontData" id=65]
+[ext_resource path="res://Fonts/go3v2.ttf" type="DynamicFontData" id=66]
+[ext_resource path="res://MiniScene/+100.tscn" type="PackedScene" id=67]
+[ext_resource path="res://Scenes/+100Spawner.gd" type="Script" id=68]
+[ext_resource path="res://MiniScene/speedUp.tscn" type="PackedScene" id=69]
+[ext_resource path="res://Scenes/speedUpSpawner.gd" type="Script" id=70]
+[ext_resource path="res://MiniScene/ultimate.tscn" type="PackedScene" id=71]
+[ext_resource path="res://Scenes/ultimateSpawner.gd" type="Script" id=72]
+[ext_resource path="res://hurt.wav" type="AudioStream" id=73]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 31 ), ExtResource( 33 ), ExtResource( 26 ), ExtResource( 27 ), ExtResource( 34 ), ExtResource( 36 ), ExtResource( 35 ), ExtResource( 25 ), ExtResource( 32 ), ExtResource( 24 ), ExtResource( 10 ), ExtResource( 5 ), ExtResource( 9 ), ExtResource( 8 ), ExtResource( 12 ), ExtResource( 13 ), ExtResource( 11 ), ExtResource( 14 ), ExtResource( 15 ), ExtResource( 30 ), ExtResource( 23 ), ExtResource( 28 ), ExtResource( 18 ), ExtResource( 19 ), ExtResource( 20 ), ExtResource( 29 ), ExtResource( 7 ), ExtResource( 21 ), ExtResource( 22 ), ExtResource( 16 ), ExtResource( 6 ), ExtResource( 17 ) ],
+"loop": true,
+"name": "default",
+"speed": 8.0
+} ]
+
+[sub_resource type="DynamicFont" id=2]
+size = 11
+font_data = ExtResource( 66 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 20
+font_data = ExtResource( 65 )
+
+[sub_resource type="DynamicFont" id=4]
+size = 20
+font_data = ExtResource( 65 )
+
+[sub_resource type="DynamicFont" id=5]
+size = 24
+font_data = ExtResource( 66 )
+
+[sub_resource type="SpriteFrames" id=6]
+animations = [ {
+"frames": [ ExtResource( 63 ), ExtResource( 62 ), ExtResource( 51 ), ExtResource( 50 ), ExtResource( 49 ), ExtResource( 52 ), ExtResource( 54 ), ExtResource( 53 ), ExtResource( 48 ) ],
+"loop": false,
+"name": "hit",
+"speed": 35.0
+}, {
+"frames": [ ExtResource( 45 ), ExtResource( 40 ), ExtResource( 39 ), ExtResource( 1 ), ExtResource( 42 ), ExtResource( 43 ), ExtResource( 37 ), ExtResource( 44 ), ExtResource( 41 ), ExtResource( 46 ), ExtResource( 38 ), ExtResource( 47 ) ],
+"loop": true,
+"name": "run",
+"speed": 20.0
+}, {
+"frames": [ ExtResource( 45 ) ],
+"loop": true,
+"name": "still",
+"speed": 5.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=7]
+extents = Vector2( 26.9688, 39.7541 )
+
+[node name="World" type="Node2D"]
+position = Vector2( 0, 2 )
+script = ExtResource( 4 )
+
+[node name="Walls" type="StaticBody2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Walls"]
+polygon = PoolVector2Array( -64, 382, -64, -66, 704, -66, 704, 382, 640, 382, 640, -2, 0, -2, 0, 382 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="background" type="AnimatedSprite" parent="."]
+position = Vector2( 319.312, 188.242 )
+scale = Vector2( 1.27577, 1.00568 )
+z_index = -2
+frames = SubResource( 1 )
+frame = 29
+playing = true
+
+[node name="Arrows" type="Node2D" parent="."]
+
+[node name="Arrows33" parent="Arrows" instance=ExtResource( 2 )]
+visible = false
+position = Vector2( 325.917, 51.4069 )
+input_pickable = true
+script = ExtResource( 55 )
+
+[node name="PowerUp" type="Node2D" parent="."]
+
+[node name="PowerUp" parent="PowerUp" groups=[
+"PowerUp",
+] instance=ExtResource( 60 )]
+position = Vector2( -222.831, -3.48175 )
+
+[node name="Hearts" type="Node2D" parent="."]
+
+[node name="Hearts" parent="Hearts" groups=[
+"Health",
+] instance=ExtResource( 59 )]
+position = Vector2( -185.692, 0 )
+script = ExtResource( 57 )
+
+[node name="ArrowSpawner" type="Node2D" parent="."]
+script = ExtResource( 3 )
+to_spawn = ExtResource( 2 )
+
+[node name="HeartSpawner" type="Node2D" parent="."]
+script = ExtResource( 58 )
+to_spawn = ExtResource( 59 )
+
+[node name="BackToMenu" type="Button" parent="."]
+margin_left = 530.748
+margin_top = 347.922
+margin_right = 623.748
+margin_bottom = 366.922
+custom_fonts/font = SubResource( 2 )
+text = "Back To Menu"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Score" type="Label" parent="."]
+margin_left = 13.6946
+margin_top = 346.148
+margin_right = 83.6946
+margin_bottom = 370.148
+custom_fonts/font = SubResource( 3 )
+text = "Score : 0"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Health" type="Label" parent="."]
+margin_left = 540.212
+margin_top = 11.1653
+margin_right = 623.212
+margin_bottom = 35.1653
+custom_fonts/font = SubResource( 4 )
+text = "Health : 10"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Instruction" type="Label" parent="."]
+margin_left = 33.4685
+margin_top = 55.0203
+margin_right = 611.469
+margin_bottom = 145.02
+custom_fonts/font = SubResource( 5 )
+text = "Welcome to Real Game. Hope you're ready!
+(Don't let the main shuriken fall off the screen)
+Press The Up Arrow To Start."
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Paddle2" type="KinematicBody2D" parent="."]
+position = Vector2( 320, 334 )
+motion/sync_to_physics = true
+script = ExtResource( 64 )
+
+[node name="Sprite" type="AnimatedSprite" parent="Paddle2"]
+position = Vector2( 0, -29.4294 )
+scale = Vector2( 0.157796, 0.249326 )
+frames = SubResource( 6 )
+animation = "still"
+playing = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Paddle2"]
+position = Vector2( -4.90491, -5.99452 )
+shape = SubResource( 7 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Anchor" type="Position2D" parent="Paddle2"]
+position = Vector2( 0, 32 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Music" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 56 )
+volume_db = -15.0
+autoplay = true
+
+[node name="PowerUpSpawner" type="Node2D" parent="."]
+script = ExtResource( 61 )
+to_spawn = ExtResource( 60 )
+
+[node name="+100" type="Node2D" parent="."]
+
+[node name="RigidBody2D" parent="+100" groups=[
+"PointUp",
+] instance=ExtResource( 67 )]
+position = Vector2( -255.196, -2.53925 )
+
+[node name="+100Spawner" type="Node2D" parent="."]
+script = ExtResource( 68 )
+to_spawn = ExtResource( 67 )
+
+[node name="speedUp" type="Node2D" parent="."]
+position = Vector2( -150, 0 )
+
+[node name="RigidBody2D" parent="speedUp" groups=[
+"speedUp",
+] instance=ExtResource( 69 )]
+
+[node name="speedUpSpawner" type="Node2D" parent="."]
+script = ExtResource( 70 )
+to_spawn = ExtResource( 69 )
+
+[node name="ultimate" type="Node2D" parent="."]
+position = Vector2( -150, 0 )
+
+[node name="RigidBody2D" parent="ultimate" groups=[
+"ultimate",
+] instance=ExtResource( 71 )]
+
+[node name="ultimateSpawner" type="Node2D" parent="."]
+position = Vector2( -150, 0 )
+script = ExtResource( 72 )
+to_spawn = ExtResource( 71 )
+
+[node name="hurt" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 73 )
+[connection signal="pressed" from="BackToMenu" to="." method="_on_BackToMenu_pressed"]

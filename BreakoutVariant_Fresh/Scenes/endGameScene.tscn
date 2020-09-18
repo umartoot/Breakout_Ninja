@@ -1,0 +1,48 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://Scenes/endGameScene.gd" type="Script" id=1]
+[ext_resource path="res://Fonts/go3v2.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://Textures/loss screen.jpg" type="Texture" id=3]
+[ext_resource path="res://Textures/button.png" type="Texture" id=4]
+[ext_resource path="res://Scripts/ReplayButton.gd" type="Script" id=5]
+[ext_resource path="res://Textures/button2.png" type="Texture" id=6]
+[ext_resource path="res://Scenes/Score.gd" type="Script" id=7]
+
+[sub_resource type="DynamicFont" id=1]
+size = 62
+font_data = ExtResource( 2 )
+
+[node name="endGameScene" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 322.709, 192.103 )
+scale = Vector2( 0.53855, 0.648356 )
+texture = ExtResource( 3 )
+
+[node name="Score" type="Label" parent="."]
+margin_left = 97.9099
+margin_top = 26.3125
+margin_right = 591.91
+margin_bottom = 209.312
+custom_fonts/font = SubResource( 1 )
+text = "Total Score: 
+0"
+align = 1
+uppercase = true
+script = ExtResource( 7 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="TextureButton" parent="."]
+margin_left = 279.834
+margin_top = 219.612
+margin_right = 694.834
+margin_bottom = 421.612
+rect_scale = Vector2( 0.301446, 0.232993 )
+action_mode = 0
+texture_normal = ExtResource( 4 )
+texture_hover = ExtResource( 6 )
+script = ExtResource( 5 )
+[connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
